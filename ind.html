@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="decription" content="affordable and proffesional web design">
+    <meta name="keywords" content="web design, proffesional web design, affordable web design">
+    <meta name="author" content="ROMUALD SALOMON">
+    <title>Recherche avancée Google</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="avancé.css">
+</head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">DEVELOPEUR PROFESIONEL</a>
+            <!-- nav-->
+            <nav class="navbar">
+                <a href="index.html">Recherche classique</a>
+                <a href="inde.html">Recherche par image</a>
+                <a href="ind.html" class="active">Recherche Avancé</a>
+             </nav>
+           </header>        
+        <div class="search-container">
+            <h2 class="titre">Recherche avancée Google</h2>
+            
+            <!-- Champ pour "Tous ces mots" -->
+            <label for="allWords" class="ot">Tous ces mots :</label>
+            <input type="text" id="allWords" placeholder="Entrez tous ces mots">
+    
+            <!-- Champ pour "Cette phrase exacte" -->
+            <label for="exactPhrase" class="ot">Cette phrase exacte :</label>
+            <input type="text" id="exactPhrase" placeholder="Entrez une phrase exacte">
+    
+            <!-- Champ pour "Un de ces mots" -->
+            <label for="anyWords" class="ot">Un de ces mots :</label>
+            <input type="text" id="anyWords" placeholder="Entrez des mots au choix">
+    
+            <!-- Champ pour "Aucun de ces mots" -->
+            <label for="noneWords" class="ot">Aucun de ces mots :</label>
+            <input type="text" id="noneWords" placeholder="Entrez des mots à exclure">
+    
+            <!-- Bouton de recherche avancée -->
+            <button onclick="advancedSearch()">Recherche avancée</button>
+    
+            <!-- Bouton "J'ai de la chance" -->
+            <button class="lucky-button" onclick="imFeelingLucky()">J'ai de la chance</button>
+        </div>
+        <script src="avancé.js" async></script>
+</body>
+</html>

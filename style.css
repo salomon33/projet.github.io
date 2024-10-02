@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppis', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(to right, #1f242d,#323946, #0ef);
+    color: var(--text-color);  
+}
+
+.box{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items:center;
+    padding: 20px;
+}
+.box > img {
+    font-size: 20px;
+    color: #777;
+}
+.box > input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: var(--main-color);
+}
+
+/* accueille*/
+
+.accueille-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding: 0px 0px 50px 50px; 
+}
+/*COULEUR TITRE*/
+#congratulations {
+    color: white;
+    height: 40px;
+}
+
+#congra {
+    color: rgba(151, 218, 203, 0.555);
+    height: 40px;
+}
+
+#con {
+    background-color: rgba(151, 218, 203, 0.555);
+}
+
+
+#congratu {
+    color: rgb(35, 115, 206);
+    height: 40px;
+}
+
+/* je vais adapter mon site a n'inporte quel ecran*/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    
+       .accueille-content h3 {
+        text-align: center;
+        }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+   }
+
+    .header {
+        padding:  2rem 3%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         padding: 1rem 3%;
+         background: var(--bg-color);
+         border-top: .1rem solid rgba(0, 0, 0, .2);
+         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+     .accueille-content h3 {
+      font-size: 2.6rem;
+      text-align: center;
+  }
+    
+} 
+
+@media (max-width: 365px) {
+    .accueille-content h3{
+        font-size: 3.2rem;
+        font-weight: 700;
+        padding: 0px 0px 50px 50px; 
+    }
+    
+
+}
